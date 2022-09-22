@@ -1,0 +1,15 @@
+ {"items":[{
+    "id": 1,
+    "estado": "Prepago pendiente"
+}, {
+    "id": 2,
+    "estado": "Liberado"
+},
+{
+    "id": 3,
+    "estado": "Vencido"
+},
+{
+    "id": 4,
+    "estado": "Cancelado"
+}]}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZGW_LISTADO_PEDIDOS_SRV" xml:lang="es" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Pedidos" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="OrgVentas"/>
+                    <PropertyRef Name="DocVentas"/>
+                </Key>
+                <Property Name="OrgVentas" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false"/>
+                <Property Name="DocVentas" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false"/>
+                <Property Name="FechaCreacion" Type="Edm.String" MaxLength="10" sap:unicode="false"/>
+                <Property Name="Usuario" Type="Edm.String" MaxLength="12" sap:unicode="false"/>
+                <Property Name="FechaDoc" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:filterable="false"/>
+                <Property Name="BloqueoEntrega" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:filterable="false"/>
+                <Property Name="BloqueoFactura" Type="Edm.String" MaxLength="2" sap:unicode="false" sap:filterable="false"/>
+                <Property Name="ValorNeto" Type="Edm.String" MaxLength="15" sap:unicode="false" sap:filterable="false"/>
+                <Property Name="ClaseDoc" Type="Edm.String" MaxLength="4" sap:unicode="false"/>
+                <Property Name="PedidoCliente" Type="Edm.String" MaxLength="20" sap:unicode="false"/>
+                <Property Name="Cliente" Type="Edm.String" MaxLength="10" sap:unicode="false"/>
+                <Property Name="StatusPedido" Type="Edm.String" MaxLength="1" sap:unicode="false"/>
+                <Property Name="Nombre" Type="Edm.String" MaxLength="35" sap:unicode="false"/>
+                <Property Name="IdentFiscal" Type="Edm.String" MaxLength="30" sap:unicode="false"/>
+                <Property Name="IdSite" Type="Edm.String" MaxLength="10" sap:unicode="false"/>
+                <Property Name="FechaVigInicio" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:filterable="false"/>
+                <Property Name="FechaVigFin" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZGW_LISTADO_PEDIDOS_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="SetPedidos" EntityType="ZGW_LISTADO_PEDIDOS_SRV.Pedidos" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="https://soaqa.sap.navent.com:44300/sap/opu/odata/sap/ZGW_LISTADO_PEDIDOS_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://soaqa.sap.navent.com:44300/sap/opu/odata/sap/ZGW_LISTADO_PEDIDOS_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

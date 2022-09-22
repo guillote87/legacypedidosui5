@@ -1,0 +1,12 @@
+{
+	"cols": [
+		{
+			"label": "Org.Venta",
+			"template": "Id"
+		},
+		{
+			"label": "Nombre",
+			"template": "Nombre"
+		}
+	]
+}	

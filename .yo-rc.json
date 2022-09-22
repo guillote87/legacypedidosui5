@@ -1,0 +1,31 @@
+{
+  "generator-template-ui5-project": {
+    "viewtype": "XML",
+    "projectname": "pedidosUI5",
+    "namespaceUI5": "legacy",
+    "enableFPM": true,
+    "enableFioriTools": true,
+    "platform": "SAP HTML5 Application Repository service for SAP BTP",
+    "ui5libs": "Content delivery network (SAPUI5)",
+    "newdir": true,
+    "codeassist": false,
+    "initrepo": false,
+    "namespaceURI": "legacy",
+    "pageType": "list",
+    "serviceUrl": "https://soaqa.sap.navent.com:44300/sap/opu/odata/sap/ZGW_INFO_MATERIAL_SRV/",
+    "host": "https://soaqa.sap.navent.com:44300",
+    "path": "/sap/opu/odata/sap/ZGW_INFO_MATERIAL_SRV/",
+    "metadata": "<?xml version=\"1.0\" encoding=\"utf-8\"?><edmx:Edmx Version=\"1.0\" xmlns:edmx=\"http://schemas.microsoft.com/ado/2007/06/edmx\" xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\" xmlns:sap=\"http://www.sap.com/Protocols/SAPData\"><edmx:DataServices m:DataServiceVersion=\"2.0\"><Schema Namespace=\"ZGW_INFO_MATERIAL_SRV\" xml:lang=\"es\" sap:schema-version=\"1\" xmlns=\"http://schemas.microsoft.com/ado/2008/09/edm\"><EntityType Name=\"Materiales\" sap:content-version=\"1\"><Key><PropertyRef Name=\"Material\"/></Key><Property Name=\"Material\" Type=\"Edm.String\" Nullable=\"false\" MaxLength=\"18\" sap:unicode=\"false\"/><Property Name=\"FechaMod\" Type=\"Edm.DateTime\" Nullable=\"false\" Precision=\"0\" sap:unicode=\"false\" sap:label=\"Cronomarcador\"/><Property Name=\"GrupoArt\" Type=\"Edm.String\" MaxLength=\"9\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"NroAntiguoMat\" Type=\"Edm.String\" MaxLength=\"18\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"GrupoArtExterno\" Type=\"Edm.String\" MaxLength=\"18\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"JerarquiaProd\" Type=\"Edm.String\" MaxLength=\"18\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"GrupoMatEmb\" Type=\"Edm.String\" MaxLength=\"4\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"TextoBreveEs\" Type=\"Edm.String\" MaxLength=\"40\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"TextoBrevePt\" Type=\"Edm.String\" MaxLength=\"40\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"EntregaIlimitada\" Type=\"Edm.String\" MaxLength=\"1\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"CantidadInicial\" Type=\"Edm.String\" MaxLength=\"6\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"LimiteEntSim\" Type=\"Edm.String\" MaxLength=\"6\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"LimiteEntMes\" Type=\"Edm.String\" MaxLength=\"6\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"DiasVigencia\" Type=\"Edm.String\" MaxLength=\"3\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"Frecuencia\" Type=\"Edm.String\" MaxLength=\"2\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"TopeDescuento1\" Type=\"Edm.String\" MaxLength=\"3\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"TopeDescuento2\" Type=\"Edm.String\" MaxLength=\"3\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"Bonificable\" Type=\"Edm.String\" MaxLength=\"1\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"PrecioEditable\" Type=\"Edm.String\" MaxLength=\"1\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"FechaEditable\" Type=\"Edm.String\" MaxLength=\"1\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"Pack\" Type=\"Edm.String\" MaxLength=\"1\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"Observaciones\" Type=\"Edm.String\" MaxLength=\"30\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"PlanPublicacion\" Type=\"Edm.String\" MaxLength=\"5\" sap:unicode=\"false\" sap:filterable=\"false\"/><Property Name=\"Renovable\" Type=\"Edm.String\" MaxLength=\"1\" sap:unicode=\"false\" sap:filterable=\"false\"/></EntityType><EntityContainer Name=\"ZGW_INFO_MATERIAL_SRV_Entities\" m:IsDefaultEntityContainer=\"true\" sap:supported-formats=\"atom json xlsx\"><EntitySet Name=\"MaterialesSet\" EntityType=\"ZGW_INFO_MATERIAL_SRV.Materiales\" sap:creatable=\"false\" sap:updatable=\"false\" sap:deletable=\"false\" sap:pageable=\"false\" sap:addressable=\"false\" sap:content-version=\"1\"/></EntityContainer><atom:link rel=\"self\" href=\"https://soaqa.sap.navent.com:44300/sap/opu/odata/sap/ZGW_INFO_MATERIAL_SRV/$metadata\" xmlns:atom=\"http://www.w3.org/2005/Atom\"/><atom:link rel=\"latest-version\" href=\"https://soaqa.sap.navent.com:44300/sap/opu/odata/sap/ZGW_INFO_MATERIAL_SRV/$metadata\" xmlns:atom=\"http://www.w3.org/2005/Atom\"/></Schema></edmx:DataServices></edmx:Edmx>",
+    "mainEntity": "MaterialesSet",
+    "opa5pos": [
+      "Main"
+    ],
+    "opa5Journeys": [
+      "Main"
+    ],
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
