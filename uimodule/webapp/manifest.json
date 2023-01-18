@@ -1,5 +1,9 @@
 {
   "_version": "1.42.0",
+   "sap.cloud": {
+        "public": true,
+        "service": "com.sap.sample.app"
+    },
   "sap.app": {
     "id": "legacy.pedidosUI5",
     "type": "application",
@@ -14,10 +18,31 @@
       "id": "@sap-ux/fiori-freestyle-writer:basic",
       "version": "0.11.15",
       "toolsId": "fe8293fb-3138-404d-86b3-3701b3525398"
-    },
+    },"crossNavigation": {
+      "inbounds": {
+          "intent1": {
+              "signature": {
+                  "parameters": {},
+                  "additionalParameters": "allowed"
+              },
+              "semanticObject": "Dynamic",
+              "action": "display",
+              "title": "{{appTitle}}",
+              "indicatorDataSource": {
+                  "dataSource": "dynamicTileIndicatorDataSource",
+                  "path": "count",
+                  "refresh": 1000
+              }
+          }
+      }
+  },
     "dataSources": {
+      "dynamicTileIndicatorDataSource": {
+        "uri": "items",
+        "type": "JSON"
+    },
       "mainService": {
-        "uri": "/sap/opu/odata/sap/ZGW_LISTADO_PEDIDOS_SRV/",
+        "uri": "/api",
         "type": "OData",
         "settings": {
           "annotations": [],
@@ -26,7 +51,7 @@
         }
       },
       "orgSales": {
-        "uri": "/sap/opu/odata/sap/ZGW_REST_SERVICES/",
+        "uri": "/api2",
         "type": "OData",
         "settings": {
           "annotations": [],

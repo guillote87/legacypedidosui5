@@ -6,9 +6,9 @@
 		<contentMiddle>
 		<Text text="{i18n>title}" />
 		</contentMiddle>
-		<contentRight>
-		<Text text="Powered by LEGACY ITC" />
-		</contentRight>		
+		<contentLeft>
+        <Image src="https://gqtesting.s3.amazonaws.com/logo.png"  width="80px"/>  
+		</contentLeft>		
 		</Bar>
 		</customHeader>
 		
@@ -117,6 +117,12 @@
 				</ColumnListItem>
 			</items>
 		</Table>
+		   <FlexBox alignItems="Center"
+				justifyContent="End">
+        <Text text="Powered by"></Text>
+               <Image src="https://gqtesting.s3.amazonaws.com/logo.png"  width="100px"/>   
+          </FlexBox> 
+		
 			</content>
 	</Page>
 </mvc:View>

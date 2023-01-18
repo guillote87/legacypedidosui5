@@ -38,6 +38,7 @@ sap.ui.define([
 			} 
                 var that = this
                 var oModel = this.oView.getModel()
+                console.log(oModel)
                 var oDataFilter = new Array()
                that.getView().byId("idTablaPedidos").setBusy(true)
 
