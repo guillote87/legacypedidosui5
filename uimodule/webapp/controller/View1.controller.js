@@ -50,7 +50,7 @@ sap.ui.define([
                 oDataFilter.push(
                     new Filter("OrgVentas", FilterOperator.EQ, this.getView().byId("orgventa").getValue()),
                     new Filter("StatusPedido", FilterOperator.EQ, this.getView().byId("status").getValue())
-                  new sFilter("sap-client", sap.ui.model.FilterOperator.EQ, "300");
+                  new Filter("sap-client", sap.ui.model.FilterOperator.EQ, "300");
                 )
 
                 if (fromDate && toDate) {
