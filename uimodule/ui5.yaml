@@ -34,7 +34,7 @@ server:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
         backend:
           - path: /sap
-            url: https://soaqa.sap.navent.com:44300
+            url: https://fioridev.sap.quintoandar.com
 builder:
   customTasks:
     - name: ui5-task-zipper
