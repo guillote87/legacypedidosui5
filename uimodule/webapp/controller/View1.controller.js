@@ -64,6 +64,9 @@ sap.ui.define([
                 )
               
                 oModel.read("/SetPedidos", {
+                   headers: {
+    "sap-client": "300"
+  },
                     filters: queryFilter,
                     success: function (data) {
                         if (data.results.length) { 
