@@ -64,6 +64,7 @@ sap.ui.define([
               
                 oModel.read("/SetPedidos", {
                     filters: queryFilter,
+                   urlParameters: "sap-client": "300",
                     success: function (data) {
                         if (data.results.length) { 
                             that.oView.setModel(new JSONModel({
