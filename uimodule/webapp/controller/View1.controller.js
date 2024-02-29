@@ -62,6 +62,14 @@ sap.ui.define([
                 let queryFilter = new Array(
                     new Filter({filters: oDataFilter, and: true})
                 )
+
+
+oModel.attachBeforeRequest(function(oEvent) {
+  var oHeaders = oEvent.getParameters().headers;
+  // Aquí puedes acceder y modificar los encabezados de la solicitud
+  console.log("Encabezados de la solicitud:", oHeaders);
+});
+
               
                 oModel.read("/SetPedidos", {
                    headers: {
