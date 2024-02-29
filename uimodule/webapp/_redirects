@@ -1,2 +1,2 @@
-/api/* https://soaqa.sap.navent.com:44300/sap/opu/odata/sap/ZGW_LISTADO_PEDIDOS_SRV/:splat 200
-/api2/* https://soaqa.sap.navent.com:44300/sap/opu/odata/sap/ZGW_REST_SERVICES/:splat 200
+/api/* https://fioridev.sap.quintoandar.com/sap/opu/odata/sap/ZGW_LISTADO_PEDIDOS_SRV/:splat 200
+/api2/* https://fioridev.sap.quintoandar.com/sap/opu/odata/sap/ZGW_REST_SERVICES/:splat 200
