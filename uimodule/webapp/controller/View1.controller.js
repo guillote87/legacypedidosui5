@@ -50,6 +50,7 @@ sap.ui.define([
                 oDataFilter.push(
                     new Filter("OrgVentas", FilterOperator.EQ, this.getView().byId("orgventa").getValue()),
                     new Filter("StatusPedido", FilterOperator.EQ, this.getView().byId("status").getValue())
+                  new sFilter("sap-client", sap.ui.model.FilterOperator.EQ, "300");
                 )
 
                 if (fromDate && toDate) {
@@ -64,7 +65,6 @@ sap.ui.define([
               
                 oModel.read("/SetPedidos", {
                     filters: queryFilter,
-                   urlParameters: "sap-client": "300",
                     success: function (data) {
                         if (data.results.length) { 
                             that.oView.setModel(new JSONModel({
