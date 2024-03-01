@@ -51,7 +51,7 @@
         }
       },
       "orgSales": {
-        "uri": "/api2/sap-client=300",
+        "uri": "/api2/?sap-client=300",
         "type": "OData",
         "settings": {
           "annotations": [],
